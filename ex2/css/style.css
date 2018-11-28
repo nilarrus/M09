@@ -1,0 +1,107 @@
+body{
+	background-image: none;
+	background-color: black;
+	font-size: 10px;
+color: white;
+}
+nav{
+	color: red;
+}
+.navegador{
+	background-color: grey;
+}
+.wiki{
+	color: green;
+}
+.movi{
+	float: right;
+	color: red;
+}
+img{
+	width: 15%;
+}
+@media screen and (min-width:50em) {
+	body{
+		background-color: green;
+	}
+	img{
+		width: 15%;
+	}
+}
+@media screen and (min-width:75em) {
+			body{
+				background-image: url("../resouces/background.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				
+			}
+		header{
+			/*position: fixed;*/
+			left: 0;
+			text-align: center;
+			top: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		/*Class header*/
+		.titulo{
+			color: black;
+			text-shadow: 0 0 3px red, 0 0 5px #8B0000;
+			margin-top: 5%;
+		}
+		/*Class navegador*/
+		.navegador{
+			background-color: black;
+		}
+		.link{
+			text-align: center;
+		}
+		nav{
+			/*position: fixed;*/
+			left: 0;
+			top: 10%;
+			right: 0;
+			padding: 2%;
+		}
+		nav>a{
+			color: white;
+		}
+		img{
+			width: 15%;
+		}
+		/*Class body*/
+		.cuerpo{
+			text-align: left;
+		}
+		.column>p{
+			background-color:  	#D3D3D3;
+		}
+		.info{
+			padding: 1.5%;
+		}
+		.esquerra{
+			float: left;
+			width: 45%;
+		}
+		.dreta{
+			float: right;
+			width: 45%;
+		}
+
+		/*Class footer*/
+		footer{
+		/*position: fixed;*/
+			text-align: center;
+		    bottom: 0;
+		    width: 100%;
+		    background-color: grey;
+				padding: 0.2%;
+		}
+		.author{
+			left: 0;
+			bottom:0;
+			right: 0;
+
+		}
+}
