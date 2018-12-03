@@ -1,31 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<title>Mesas</title>
-	   <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <!--Let browser know website is optimized for mobile-->
-      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
+    <title>Reserva mesa</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
+
 <body>
-	<div class="row">
-		<div class="row m6 s6 center blue">
-			<h2>Mesas</h2>
-			<div class="col m4 s4 center">
-				<div class="col"><i class="large material-icons">local_dining</i><div>2</div></div>
-				<div class="col"><i class="large material-icons">local_dining</i><div>4</div></div>
-				<div class="col"><i class="large material-icons">local_dining</i><div>4</div></div>
-				<div class="col"><i class="large material-icons">local_dining</i><div>6</div></div>
-				<div class="col"><i class="large material-icons">local_dining</i><div>4</div></div>
-				<div class="col"><i class="large material-icons">local_dining</i><div>2</div></div>
-			</div>		
-		</div>
-	</div>
-	
-	<!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Modal reservas -->
+    <div id="modalConfirmar" class="modal">
+        <div class="modal-content">
+            <h4>Cuantos comensales?</h4>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input value="1" id="comensales" type="number" min="1" max="4" class="validate">
+                    <label for="comensales">Comensales</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" onclick="reservar()" class="waves-effect waves-green btn-flat">Reservar</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
+        </div>
+    </div>
+    <!--  -->
+    <!-- Contenido tabla -->
+    <div class="container">
+        <div class="row listadoMesas">
+            <!-- Mesa 1 -->
+            <div class="col s12 m6">
+                <div class="card disponible" id="mesa-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Mesa 1</span>
+                        <p class="textoDisponible">Disponible</p>
+                        <p class="comensales">
+                            Comensales: <span class="cantidadComensales">0</span>
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modalConfirmar" onclick="prepararReserva(1)" class="btn-reservar btn modal-trigger">Reservar</a>
+                        <a href="#!" onclick="cancelarMesa(1)" class="btn-cancelar">Cancelar reserva</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mesa 2 -->
+            <div class="col s12 m6">
+                <div class="card disponible" id="mesa-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">Mesa 2</span>
+                        <p class="textoDisponible">Disponible</p>
+                        <p class="comensales">
+                            Comensales: <span class="cantidadComensales">0</span>
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modalConfirmar" onclick="prepararReserva(2)" class="btn-reservar btn modal-trigger">Reservar</a>
+                        <a href="#!" onclick="cancelarMesa(2)" class="btn-cancelar">Cancelar reserva</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row listadoMesas">
+            <!-- Mesa 3 -->
+            <div class="col s12 m6">
+                <div class="card disponible" id="mesa-3">
+                    <div class="card-content white-text">
+                        <span class="card-title">Mesa 3</span>
+                        <p class="textoDisponible">Disponible</p>
+                        <p class="comensales">
+                            Comensales: <span class="cantidadComensales">0</span>
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modalConfirmar" onclick="prepararReserva(3)" class="btn-reservar btn modal-trigger">Reservar</a>
+                        <a href="#!" onclick="cancelarMesa(3)" class="btn-cancelar">Cancelar reserva</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mesa 4 -->
+            <div class="col s12 m6">
+                <div class="card disponible" id="mesa-4">
+                    <div class="card-content white-text">
+                        <span class="card-title">Mesa 4</span>
+                        <p class="textoDisponible">Disponible</p>
+                        <p class="comensales">
+                            Comensales: <span class="cantidadComensales">0</span>
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modalConfirmar" onclick="prepararReserva(4)" class="btn-reservar btn modal-trigger">Reservar</a>
+                        <a href="#!" onclick="cancelarMesa(4)" class="btn-cancelar">Cancelar reserva</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <a href="comandas.html">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Continua
+                    <i class="material-icons right">send</i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/reservaTaula.js"></script>
 </body>
+
 </html>

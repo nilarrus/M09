@@ -1,10 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html>
 
-  </body>
+<head>
+    <title>Reserva tu mesa</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container screener valign-wrapper">
+        <div class="row pantalla s12 m12">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mesas</th>
+                        <th class="center-align">Primer Plato</th>
+                        <th class="center-align">Segundo Plato</th>
+                        <th class="center-align">Postre</th>
+                        <th class="center-align">Número de comensales</th>
+                        <th class="center-align">Combinado / Menú del día</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Mesa 1</td>
+                        <td class="center-align">Espaguetis</td>
+                        <td class="center-align">Morro de cordero</td>
+                        <td class="center-align">Helados</td>
+                        <td class="center-align">1</td>
+                        <td class="center-align">No</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa 2</td>
+                        <td class="center-align">Sopa del dia</td>
+                        <td class="center-align">Escalopa</td>
+                        <td class="center-align">Café</td>
+                        <td class="center-align">4</td>
+                        <td class="center-align">Sí</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa 3</td>
+                        <td class="center-align"></td>
+                        <td class="center-align"></td>
+                        <td class="center-align"></td>
+                        <td class="center-align"></td>
+                        <td class="center-align"></td>
+                    </tr>
+                    <tr>
+                        <td>Mesa 4</td>
+                        <td class="center-align"></td>
+                        <td class="center-align"></td>
+                        <td class="center-align"></td>
+                        <td class="center-align"></td>
+                        <td class="center-align"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="row">
+                <a href="menuDelDia.html">
+                    <button class="btn-small waves-effect waves-light" type="submit" name="action">Menú del día
+                        <i class="material-icons right">local_dining</i>
+                    </button>
+                </a>
+            </div>
+
+            <div class="row">
+                <a href="facturacio.html">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Pagar
+                        <i class="material-icons right">credit_card</i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
 </html>
