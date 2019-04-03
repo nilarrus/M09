@@ -1,1 +1,0 @@
-S'han de canviar les rutes dels enllaços al directori a on es trobin perquè la pàgina funcioni correctament.

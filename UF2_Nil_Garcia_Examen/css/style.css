@@ -1,0 +1,67 @@
+body{
+	text-align: center;
+}
+td{
+	padding: 1.5%;
+	width: 46%;
+}
+.ColumTitle{
+	width: 30%;
+}
+.ColumTitle2{
+	width: 33%;
+	padding: 1.5%;
+}
+.ColumTitle3{
+	width: 30%;
+}
+.Gif1{
+	padding-left: 20%;
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+}
+/*Class header*/
+.titulo{
+	color: rgb(9, 28, 82);
+	text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 5px rgb(6, 43, 122);
+	border-bottom: 5px solid blue;
+}
+h1{
+	border-top: 5px solid blue;
+}
+.capital{
+	font-size: 200%;
+}
+.cabecera{
+	text-align: center;
+}
+/*Class body*/
+.cuerpo{
+	text-align: center;
+	
+	width: 95%;
+}
+img{
+	width: 40%;
+}
+.imga{
+	background-color: rgb(15, 27, 78);
+	color:white;	
+}
+.img2{
+	width: 100%;
+}
+.link{
+	text-align: center;
+}
+.info{
+	text-align: left;
+	padding: 1.5%;
+}
+.parrafo{
+	width: 95%;	
+}
+.video{
+	background-color: rgb(15, 27, 78);
+}

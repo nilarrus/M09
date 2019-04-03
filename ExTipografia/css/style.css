@@ -1,0 +1,52 @@
+td{
+	padding: 1.5%;
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Class header*/
+.titulo{
+	color: #8B0000;
+	text-shadow: 0 0 3px red, 0 0 5px #8B0000;
+}
+.capital{
+	font-size: 200%;
+}
+.cabecera{
+	text-align: center;
+}
+/*Class navegador*/
+.navegador{
+	width: 95%;
+	display: flex;
+	margin-bottom: 5%;
+}
+
+.Img1{
+	width: 20%;
+	
+}
+.Img2{
+	width: 20%;
+	background-color: black;
+	border-radius: 10%;
+}
+/*Class body*/
+.cuerpo{
+	text-align: center;
+	
+	width: 95%;
+}
+.imga{
+	background-color: #8B0000;	
+}
+.link{
+	text-align: center;
+}
+.info{
+	padding: 1.5%;
+}
+.parrafo{
+	width: 95%;	
+}

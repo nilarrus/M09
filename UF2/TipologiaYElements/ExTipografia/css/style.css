@@ -1,75 +1,52 @@
-header{
-	position: fixed;
-	left: 0;
-	top: 0;
-	text-align: center;
-	width: 100%;
+td{
+	padding: 1.5%;
 }
-body{
-	background-image: url("../resouces/background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+p{
+	font-family: 'Montserrat', sans-serif;
 }
+
 /*Class header*/
 .titulo{
-	
 	color: #8B0000;
 	text-shadow: 0 0 3px red, 0 0 5px #8B0000;
+}
+.capital{
+	font-size: 200%;
+}
+.cabecera{
+	text-align: center;
 }
 /*Class navegador*/
 .navegador{
 	width: 95%;
 	display: flex;
-	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .Img1{
-	float: left;
 	width: 20%;
-	background-color: black;
-	border-radius: 80%;
+	
 }
 .Img2{
 	width: 20%;
-	float: right;
 	background-color: black;
-	border-radius: 80%;
+	border-radius: 10%;
 }
 /*Class body*/
 .cuerpo{
 	text-align: center;
+	
 	width: 95%;
+}
+.imga{
+	background-color: #8B0000;	
+}
+.link{
+	text-align: center;
 }
 .info{
 	padding: 1.5%;
-	text-align: center;
 }
-.column{
-	background-color: grey;
-	border-radius: 10%;
-}
-.esquerra{
-	float: left;
-	width: 45%;
-	padding: 0%;
-}
-.dreta{
-	float: right;
-	padding: 0%;
-	width: 45%;
-}
-/*Class footer*/
-footer{
-	position: fixed;
-	text-align: center;
-	left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: grey;
-}
-.author{
-	left: 0;
-	bottom:0;
-	right: 0;
-
+.parrafo{
+	width: 95%;	
 }
